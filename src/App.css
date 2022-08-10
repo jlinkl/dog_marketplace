@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+body{
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .navbar >li {
+    float: left;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .navbar >li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
   }
+  
+  /* Change the link color to #111 (black) on hover */
+  .navbar > li a:hover {
+    background-color: #111;
+  }
+
+
+  .list-dogs {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    
+  }
+
+  .dog{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+    width: 26vh;
+    height: auto;
+  }
+
+  .dog > img{
+    width: 25vh;
+    height: 10vh;
+    height:auto;
+    border: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 5px;
+    
+  }
+
+  .checkout{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+    background: white;
+}
+
+button:hover{
+    text-decoration: underline;
+
 }
